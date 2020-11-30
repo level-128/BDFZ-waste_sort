@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>识别结果</title>
+{% endblock %}
+
+{% block body %}
+<div class="box">
+    <img class="result-img" src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Photo">
+
+    {% if successful %}
+    <h2 class="result">输入垃圾属于：{{ category }}</h2>
+    <p class="description">它是：{{ tag }}，可信度：{{ confidence }}。</p>
+    <p class="description">{{ location }}</p>
+    {% else %}
+    <h2 class="result failed">无法分类</h2>
+    <p class="description">不过它可能属于：{{ ", ".join(tags[:3]) }}</p>
+    {% endif %}
+    <a class="back-button" href="/">← 返回首页</a> <br>
+</div>
+{% endblock %}

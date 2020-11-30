@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>垃圾分类从我做起</title>
+{% endblock %}
+
+{% block body %}
+<h1>上传图片</h1>
+<div class="form-wrapper">
+    <form method="post" enctype="multipart/form-data">
+        <label class="select-file-label">
+            <input hidden type="file" name="file" accept="image/*" onchange="clickSubmit()">
+            <span>选择图片</span>
+        </label>
+        <br>
+        <input hidden type="submit" id="submit" value="确认">
+    </form>
+</div>
+{% endblock %}

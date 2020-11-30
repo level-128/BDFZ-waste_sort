@@ -1,0 +1,56 @@
+body {
+    font-size: 14px;
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.flash-message {
+    font-weight: 600;
+    color: coral;
+    list-style-type: none;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.select-file-label {
+    border: 2pt solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8pt 12pt;
+    border-radius: 8pt;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-img {
+    height: 300px;
+    align-self: center;
+}
+
+.result {
+    padding: 20px 0 0 0;
+}
+
+.description {
+    text-align: center;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 10px;
+    align-self: center;
+}

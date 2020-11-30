@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>结果 (fake)</title>
+{% endblock %}
+
+{% block body %}
+<a href="/">Bring me back</a> <br>
+<img class="result-img" src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Photo">
+{% endblock %}
